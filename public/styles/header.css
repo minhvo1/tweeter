@@ -1,0 +1,24 @@
+header {
+  height: 400px;
+  width: 100%;
+  background-image: url("/images/header-background.png");
+}
+
+.avatar {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+
+}
+
+.name {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.name>p {
+  margin: 1rem;
+  font-size: 3rem;
+}
