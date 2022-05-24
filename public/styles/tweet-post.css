@@ -6,6 +6,7 @@
   height: 18rem;
   margin-top: 3rem;
   border: 0.2rem solid;
+  box-shadow: 5px 10px #888888;
 }
 
 .header-tweet {
