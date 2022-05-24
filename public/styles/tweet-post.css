@@ -1,4 +1,4 @@
-.tweet-post {
+.article-tweet {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -6,4 +6,23 @@
   height: 20rem;
   margin-top: 3rem;
   border: 0.2rem solid;
+}
+
+.header-tweet {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+}
+
+.tweet-user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.tweet-user>img {
+  width: 4rem;
+  height: 4rem;
 }
