@@ -4,16 +4,32 @@
   flex-direction: column;
 }
 
+.new-tweet>p {
+  font-size: 3rem;
+}
+
 .text-box {
   width: 50rem;
   height: 3rem;
   border-style: none;
   border-bottom: 0.3rem solid;
-  background-color: #e0d6c4;
+  background-color: #ecdeb8;
 }
 
 .tweet-submission-counter {
   display: flex;
   justify-content: space-between;
-  padding-top: 0.8rem;
+  padding-top: 0.4rem;
+}
+
+.tweet-submission-counter>button {
+  font-family: 'Bungee';
+  font-size: 1.5rem;
+  background-color: #E6AF2E;
+  border-width: 0.2rem;
+}
+
+.counter {
+  font-family: 'Bungee';
+
 }

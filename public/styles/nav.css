@@ -5,8 +5,8 @@ nav {
   z-index: 1;
   height: 120px;
   width: 100%;
-  background-color: #4056A1;
-  color: #FFFFFF;
+  background-color: #E6AF2E;
+  color: #191716;
   padding: 1.5em 1.5em;
 }
 
@@ -19,7 +19,7 @@ nav {
   display: flex;
   justify-content: center;
   text-align: center;
-  color: red;
+  color: rgb(44, 33, 5);
 }
 
 nav>div>p {
