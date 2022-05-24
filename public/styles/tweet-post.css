@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
   width: 80%;
-  height: 20rem;
+  height: 18rem;
   margin-top: 3rem;
   border: 0.2rem solid;
 }
@@ -13,16 +13,53 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 5rem;
+  margin: 1rem;
+  height: 4rem;
 }
 
-.tweet-user {
+.user-tweet {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-.tweet-user>img {
+.user-tweet>img {
   width: 4rem;
   height: 4rem;
 }
+
+.user-tweet>p {
+  padding-left: 1rem;
+}
+
+.content-tweet {
+  display: flex;
+  justify-content: flex-start;
+  margin: 1rem;
+  
+} 
+
+.footer-tweet{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+  padding-top: 0.8rem;
+  border-top: 0.2rem solid
+}
+
+.footer-tweet>p {
+  margin: 0rem 1rem;
+  font-size: 1rem;
+}
+
+.actions-tweet {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 4.4rem;
+  margin: 0rem 1rem;
+  font-size: 1rem;
+}
+
+
