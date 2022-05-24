@@ -1,0 +1,19 @@
+.new-tweet {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.text-box {
+  width: 50rem;
+  height: 3rem;
+  border-style: none;
+  border-bottom: 0.3rem solid;
+  background-color: #e0d6c4;
+}
+
+.tweet-submission-counter {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.8rem;
+}

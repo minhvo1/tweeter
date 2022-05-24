@@ -17,7 +17,7 @@ html {
 body {
   font-family: 'Source Sans Pro', sans-serif;
   color: #545149;
-  background-color: #f4f1ec;
+  background-color: #e0d6c4;
   font-size: 24px;
 }
 
@@ -30,5 +30,5 @@ body {
   margin: auto;
   display: flex;
   justify-content: center;
-  background-color: #f4f1ec;
+  background-color: #e0d6c4;
  }
