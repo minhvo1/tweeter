@@ -6,7 +6,7 @@
   height: 18rem;
   margin-top: 3rem;
   border: 0.2rem solid;
-  box-shadow: 5px 10px #888888;
+
 }
 
 .header-tweet {
@@ -14,7 +14,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 1rem;
+  margin: 1rem 1.5rem;
   height: 4rem;
 }
 
@@ -31,12 +31,13 @@
 
 .user-tweet>p {
   padding-left: 1rem;
+  
 }
 
 .content-tweet {
   display: flex;
   justify-content: flex-start;
-  margin: 1rem;
+  margin: 1rem 1.5rem;
   
 } 
 
@@ -44,13 +45,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 1rem;
+  margin: 1rem 1.5rem;
   padding-top: 0.8rem;
   border-top: 0.2rem solid
 }
 
 .footer-tweet>p {
-  margin: 0rem 1rem;
+  margin: 0rem 0.5rem;
   font-size: 1rem;
 }
 
@@ -58,9 +59,9 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 4.4rem;
-  margin: 0rem 1rem;
-  font-size: 1rem;
+  width: 7rem;
+  margin: 0rem 0.5rem;
+  font-size: 1.4rem;
 }
 
 
