@@ -1,4 +1,4 @@
-header {
+.banner-header {
   height: 400px;
   width: 100%;
   background-image: url("/images/header-background.png");
@@ -20,6 +20,8 @@ header {
 
 .name>p {
   margin: 1rem;
-  font-size: 3rem;
+  font-size: 3.2rem;
+  letter-spacing: 0.15rem;
+  font-weight: 600;
   color: #E6AF2E
 }

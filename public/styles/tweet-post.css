@@ -1,0 +1,9 @@
+.tweet-post {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80%;
+  height: 20rem;
+  margin-top: 3rem;
+  border: 0.2rem solid;
+}
