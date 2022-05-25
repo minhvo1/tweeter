@@ -61,7 +61,11 @@
           <!-- Tweet composer text box, submission button and character counter -->
           <textarea class="text-box" name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
           <div class="tweet-submission-counter">
-            <button class="tweet-button" type="submit">Tweet</button>
+            <div class="tweet-submit-errors">
+              <button class="tweet-button" type="submit">Tweet</button>
+              <p id="tweet-length-error">Tweet is too long!</p>
+              <p id="tweet-invalid-error">Invalid tweet!</p>
+            </div>
             <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
         </form>

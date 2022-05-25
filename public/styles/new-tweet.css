@@ -27,7 +27,31 @@
   padding-top: 0.4rem;
 }
 
-.tweet-submission-counter>button {
+.tweet-submit-errors {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  width: 50rem;
+}
+
+#tweet-length-error {
+  position: absolute;
+  left: 120px;
+  margin: 0;
+  color: red;
+  display: none;
+}
+
+#tweet-invalid-error {
+  position: absolute;
+  left: 120px;
+  margin: 0;
+  color: red;
+  display: none;
+}
+
+.tweet-button {
   font-family: 'Bungee';
   font-size: 1.5rem;
   background-color: #E6AF2E;
