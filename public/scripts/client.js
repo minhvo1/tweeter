@@ -12,13 +12,13 @@ const createTweetElement = function(tweetData) {
       <!-- User information header -->
       <div class="user-tweet">
         <img src=${tweetData.user.avatars}>
-        <p>${tweetData.user.name}</p>
+        <p>${escape(tweetData.user.name)}</p>
       </div>
-      <p>${tweetData.user.handle}</p>
+      <p>${escape(tweetData.user.handle)}</p>
     </header>
     <!-- Tweet content -->
     <p class="content-tweet">
-      ${tweetData.content.text}
+      ${escape(tweetData.content.text)}
     </p>
     <!-- Date posted and tweet actions footer -->
     <footer class="footer-tweet">
@@ -83,6 +83,13 @@ $(document).ready(function() {
     $('#tweet-length-error').css({'display':'none'});
   })
 })
+
+//Escape function
+const escape = function (str) {
+  let div = document.createElement("div");
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+};
 
 //Driver code
 $(document).ready(function() {
