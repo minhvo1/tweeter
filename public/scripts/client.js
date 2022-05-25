@@ -37,7 +37,7 @@ const createTweetElement = function(tweetData) {
 //Append multiple tweet articles to main container
 const renderTweets = function(dataArr) {
   for (const obj of dataArr) {
-    $('.container').append(createTweetElement(obj));
+    $('.tweet-articles').append(createTweetElement(obj));
   }
 };
 

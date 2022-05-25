@@ -33,3 +33,11 @@ body {
   align-items: center;
   background-color: #ecdeb8;
  }
+
+ .tweet-articles {
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+ }

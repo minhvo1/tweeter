@@ -11,7 +11,7 @@ $(document).ready(function() {
     }
     event.preventDefault();
   })
-  $(document).on('click', function() {
+  $('.tweet-button').on('click', function() {
     $('#tweet-invalid-error').css({'display':'none'});
     $('#tweet-length-error').css({'display':'none'});
   })
