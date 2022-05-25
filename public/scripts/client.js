@@ -35,8 +35,8 @@ const createTweetElement = function(tweetData) {
 }
 
 //Append multiple tweet articles to main container
-const renderTweets = function() {
-  for (const obj of data) {
+const renderTweets = function(dataArr) {
+  for (const obj of dataArr) {
     $('.container').append(createTweetElement(obj));
   }
 };
@@ -45,12 +45,12 @@ const renderTweets = function() {
 const loadTweets = function() {
   $.ajax('/tweets', { method: 'GET'})
   .done(function(data) {
-    return data;
+    renderTweets(data);
   })
 }
 
 //driver code (temporary)
 
 $(document).ready(function() {
-  renderTweets(loadTweets());
+  loadTweets();
 });
