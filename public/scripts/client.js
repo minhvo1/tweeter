@@ -22,7 +22,7 @@ const createTweetElement = function(tweetData) {
     </p>
     <!-- Date posted and tweet actions footer -->
     <footer class="footer-tweet">
-      <p>${tweetData.created_at}</p>
+      <p>${timeago.format(tweetData.created_at)}</p>
       <div class="actions-tweet">
         <i class="fa-solid fa-flag"></i>
         <i class="fa-solid fa-retweet"></i>
@@ -49,8 +49,7 @@ const loadTweets = function() {
   })
 }
 
-//driver code (temporary)
-
+//Driver code
 $(document).ready(function() {
   loadTweets();
 });
