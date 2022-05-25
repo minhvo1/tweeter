@@ -25,6 +25,7 @@
     <script type="text/javascript" src="/scripts/client.js"></script>
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
     <script type="text/javascript" src="/scripts/hover-shadow.js"></script>
+    <script type="text/javascript" src="/scripts/form-submit.js"></script>
   </head>
 
   <body>
@@ -60,37 +61,12 @@
           <!-- Tweet composer text box, submission button and character counter -->
           <textarea class="text-box" name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
           <div class="tweet-submission-counter">
-            <button type="submit">Tweet</button>
+            <button class="tweet-button" type="submit">Tweet</button>
             <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
         </form>
       </section>
-
-      <!-- Tweet articles -->
-      <article class="article-tweet">
-        <header class="header-tweet">
-          <!-- User information header -->
-          <div class="user-tweet">
-            <img src="/images/profile-hex.png">
-            <p>Minh Vo</p>
-          </div>
-          <p>@minhvo</p>
-        </header>
-        <!-- Tweet content -->
-        <p class="content-tweet">
-          Hello, world
-        </p>
-        <!-- Date posted and tweet actions footer -->
-        <footer class="footer-tweet">
-          <p>2 days ago</p>
-          <div class="actions-tweet">
-            <i class="fa-solid fa-flag"></i>
-            <i class="fa-solid fa-retweet"></i>
-            <i class="fa-solid fa-heart"></i>
-          </div>
-        </footer>
-      </article>
-
+      <!-- Tweet articles to be added dynamically here-->
     </main>
     <!-- Page footer -->
     <footer class="page-footer">

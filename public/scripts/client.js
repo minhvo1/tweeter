@@ -71,5 +71,4 @@ const data = [
 
 $(document).ready(function() {
   renderTweets(data);
-}); 
-  
+});
