@@ -36,18 +36,53 @@ const createTweetElement = function(tweetData) {
 
 //Append multiple tweet articles to main container
 const renderTweets = function(dataArr) {
+  let container = $('.tweet-articles-container');
   for (const obj of dataArr) {
-    $('.tweet-articles').append(createTweetElement(obj));
+    container.append(createTweetElement(obj));
   }
 };
 
-//Load tweets
+
 const loadTweets = function() {
-  $.ajax('/tweets', { method: 'GET'})
-  .done(function(data) {
-    renderTweets(data);
+  $.ajax({
+    type: 'GET',
+    url: '/tweets',
+    success: function(data) {
+      renderTweets(data);
+    }
   })
-}
+};
+
+$(document).ready(function() {
+  $('.tweet-form').submit(function(event) {
+    event.preventDefault();
+    let tweetData = $(this).serialize();
+    if (tweetData.slice(5) === "" || null) {
+      $('#tweet-invalid-error').css({'display':'block'});
+    } else if (tweetData.slice(5).length > 140) {
+      $('#tweet-length-error').css({'display':'block'});
+    } else {
+      $.ajax({
+        type: 'POST',
+        url: '/tweets',
+        data: tweetData,
+        success: function() {
+          $.ajax({
+            type: 'GET',
+            url: '/tweets',
+            success: function(data) {
+              renderTweets([data[data.length-1]]); //Only render the last tweet added
+            }
+          })
+        }
+      })
+    }
+  })
+  $('.tweet-button').on('click', function() {
+    $('#tweet-invalid-error').css({'display':'none'});
+    $('#tweet-length-error').css({'display':'none'});
+  })
+})
 
 //Driver code
 $(document).ready(function() {

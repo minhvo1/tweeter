@@ -1,17 +1,17 @@
 //Script to activate shadow on hover
 
 //Tweet submission button
-$(document).ready(function() {
-  $('.tweet-submission-counter').children('button').mouseenter(function() {
+$(document).ajaxComplete(function() {
+  $('.tweet-submit-errors').children('button').mouseenter(function() {
     $(this).css('box-shadow', '3.7px 3.7px #666666');
   })
-  $('.tweet-submission-counter').children('button').mouseleave(function() {
+  $('.tweet-submit-errors').children('button').mouseleave(function() {
     $(this).css('box-shadow', '');
   })
 });
 
 //Tweet article
-$(document).ready(function() {
+$(document).ajaxComplete(function() {
   $('.article-tweet').mouseenter(function() {
     $(this).css('box-shadow', '7px 7px #666666');
   })
@@ -21,7 +21,7 @@ $(document).ready(function() {
 });
 
 //Tweet article action buttons
-$(document).ready(function() {
+$(document).ajaxComplete(function() {
   $('.fa-flag').mouseenter(function() {
     $(this).css('color', '#E6AF2E');
   })
