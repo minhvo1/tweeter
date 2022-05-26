@@ -1,3 +1,4 @@
+// Function for composer form toggle
 $(document).ready(function() {
   // Toggle composer form
   $('.action').on('click', function() {
@@ -13,5 +14,31 @@ $(document).ready(function() {
   $('.action').on('mouseleave', function() {
     $(this).find('.icon').css('color', '');
     $(this).find('p').css('color', '');
+  })
+})
+
+// Function for scroll up toggle
+$(document).ready(function() {
+  $('#button-scroll-up').hide();
+  $(window).scroll(function() {
+    if($(document).scrollTop() > 100) {
+      $('#button-scroll-up').fadeIn('fast');
+    } else {
+      $('#button-scroll-up').fadeOut('fast');
+    }
+  })
+  $('#button-scroll-up').on('mouseover', function() {
+    $(this).css('color', '#ba5e0d');
+    $(this).css('border', '0.23rem solid #ba5e0d');
+  })
+
+  $('#button-scroll-up').on('mouseleave', function() {
+    $(this).css('color', '#000000');
+    $(this).css('border', '0.23rem solid #000000');
+  })
+
+  $('#button-scroll-up').on('click', function(event) {
+    event.preventDefault();
+    $('html, body').animate({scrollTop:0},300)
   })
 })

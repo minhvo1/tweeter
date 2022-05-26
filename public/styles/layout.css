@@ -42,6 +42,22 @@ body {
   justify-content: center;
  }
 
+ #button-scroll-up {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  border: 0.23rem solid black;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  background-color: #ecdeb8;
+  font-size: 2rem;
+  cursor: pointer;
+ }
+
  @media (min-width: 1024px) {
   .header-and-container {
     display: flex;
@@ -56,7 +72,7 @@ body {
     width: 40rem;
     margin-left: 5rem;
     z-index: 1;
-    border: 0.2rem solid #353530;
+    border: 0.25rem solid #353530;
     box-shadow: 6px 6px #696964;
   }
 }

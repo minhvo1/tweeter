@@ -61,8 +61,9 @@
 .tweet-button {
   font-family: 'Bungee';
   font-size: 1.5rem;
-  background-color: #E6AF2E;
+  background-color: #e6b545;
   border-width: 0.2rem;
+  cursor: pointer;
 }
 
 .counter {
