@@ -30,9 +30,9 @@ const createTweetElement = function(tweetData) {
       </div>
     </footer>
   </article> 
-  `
+  `;
   return $tweet;
-}
+};
 
 //Append multiple tweet articles to main container
 const renderTweets = function(dataArr) {
@@ -50,7 +50,7 @@ const loadTweets = function() {
     success: function(data) {
       renderTweets(data);
     }
-  })
+  });
 };
 
 //Form submission function
@@ -73,18 +73,18 @@ $(document).ready(function() {
             type: 'GET',
             url: '/tweets',
             success: function(data) {
-              renderTweets([data[data.length-1]]); // Only render the last tweet added
+              renderTweets([data[data.length - 1]]); // Only render the last tweet added
             }
-          })
+          });
         }
-      })
+      });
     }
-  })
+  });
   $('.tweet-button').on('click', function() {
     $('#tweet-invalid-error').css({'display':'none'}); // Disable error message
     $('#tweet-length-error').css({'display':'none'});
-  })
-})
+  });
+});
 
 // Escape function
 const escape = function (str) {
