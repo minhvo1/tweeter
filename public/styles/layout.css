@@ -41,3 +41,20 @@ body {
   align-items: center;
   justify-content: center;
  }
+
+ @media (min-width: 1024px) {
+  .header-and-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5rem;
+  }
+  .container {
+    margin-top: 5rem;
+  }
+  
+  .banner-header {
+    width: 40rem;
+    margin-left: 5rem;
+    border: 0.3rem solid #353530;
+  }
+}

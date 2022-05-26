@@ -38,43 +38,46 @@
         <i class="fa-solid fa-angles-down icon"></i>
       </div>
     </nav>
-
-    <!-- Profle top banner header (profile picture, name and username) -->
-    <header class="banner-header">
-      <div class="avatar">
-          <img src="/images/profile-hex.png"> 
+    
+    <div class="header-and-container">
+      <!-- Profle top banner header (profile picture, name and username) -->
+      <header class="banner-header">
+        <div class="avatar">
+            <img src="/images/profile-hex.png"> 
+        </div>
+        <div class="name">
+            <p>Minh Vo</p>
+        </div>
+        <div class="username">
+          <p>@minhvo</p>
       </div>
-      <div class="name">
-          <p>Minh Vo</p>
-      </div>
-      <div class="username">
-        <p>@minhvo</p>
-    </div>
-    </header>
+      </header>
 
-    <!-- Page-specific (main) content here -->
-    <main class="container">
-      <!-- Tweet composer -->
-      <section class="new-tweet">
-        <p>Compose Tweet</p>
-        <form class="tweet-form" method="POST" action="/tweets">
-          <!-- Tweet composer text box, submission button and character counter -->
-          <textarea class="text-box" name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
-          <div class="tweet-submission-counter">
-            <div class="tweet-submit-errors">
-              <button class="tweet-button" type="submit">Tweet</button>
-              <p id="tweet-length-error">Tweet is too long!</p>
-              <p id="tweet-invalid-error">Invalid tweet!</p>
+      <!-- Page-specific (main) content here -->
+      <main class="container">
+        <!-- Tweet composer -->
+        <section class="new-tweet">
+          <p>Compose Tweet</p>
+          <form class="tweet-form" method="POST" action="/tweets">
+            <!-- Tweet composer text box, submission button and character counter -->
+            <textarea class="text-box" name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
+            <div class="tweet-submission-counter">
+              <div class="tweet-submit-errors">
+                <button class="tweet-button" type="submit">Tweet</button>
+                <p id="tweet-length-error">Tweet is too long!</p>
+                <p id="tweet-invalid-error">Invalid tweet!</p>
+              </div>
+              <output name="counter" class="counter" for="tweet-text">140</output>
             </div>
-            <output name="counter" class="counter" for="tweet-text">140</output>
-          </div>
-        </form>
-      </section>
-      <div class="tweet-articles-container">
-        <!-- Tweet articles to be added dynamically here-->
-      </div>
+          </form>
+        </section>
+        <div class="tweet-articles-container">
+          <!-- Tweet articles to be added dynamically here-->
+        </div>
 
-    </main>
+      </main>
+    </div>
+
     <!-- Page footer -->
     <footer class="page-footer">
       <div>

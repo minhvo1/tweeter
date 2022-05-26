@@ -1,15 +1,18 @@
 .banner-header {
   height: 400px;
-  width: 100%;
   background-image: url("/images/header-background.png");
   margin-top: 120px;
 }
 
 .avatar {
-  padding-top: 1rem;
+  padding-top: 1.5rem;
   display: flex;
   justify-content: center;
+}
 
+.avatar>img {
+  height: 240px;
+  width: 240px;
 }
 
 .name {
@@ -19,7 +22,7 @@
 }
 
 .name>p {
-  margin: 0.7rem;
+  margin: 0.8rem;
   font-size: 2.5rem;
   letter-spacing: 0.05rem;
   font-weight: 600;
