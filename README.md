@@ -1,9 +1,15 @@
 # Tweeter Project
 
-Tweeter is a simple, single-page Twitter clone.
+Tweeter is a simple, single-page Twitter clone that uses jQuery, CSS and HTML built from scratch!
 
 ## Final Product
-
+<figure>
+<img src="https://github.com/minhvo1/tweeter/blob/master/docs/landing-page-mobile.PNG" align="center" style="width:60%; height:60%; text-align="center">
+<img src="https://github.com/minhvo1/tweeter/blob/master/docs/landing-page.PNG" align="center" style="width:60%; height:60%; text-align="center">
+<img src="https://github.com/minhvo1/tweeter/blob/master/docs/writing-tweet.PNG".PNG" align="center" style="width:60%; height:60%; text-align="center">
+<img src="https://github.com/minhvo1/tweeter/blob/master/docs/tweet-articles-flow.PNG" align="center" style="width:60%; height:60%; text-align="center">
+<img src="https://github.com/minhvo1/tweeter/blob/master/docs/long-tweet.PNG" align="center" style="width:60%; height:60%; text-align="center">
+</figure>
 
 ## Getting Started
 
