@@ -1,6 +1,6 @@
-//Script to activate shadow on hover
+//Activate shadow on hover
 
-//Tweet submission button
+//Tweet submission button shadow
 $(document).ajaxComplete(function() {
   $('.tweet-submit-errors').children('button').mouseenter(function() {
     $(this).css('box-shadow', '3.7px 3.7px #666666');
@@ -10,7 +10,7 @@ $(document).ajaxComplete(function() {
   })
 });
 
-//Tweet article
+//Tweet article shadow
 $(document).ajaxComplete(function() {
   $('.article-tweet').mouseenter(function() {
     $(this).css('box-shadow', '7px 7px #666666');
@@ -20,7 +20,7 @@ $(document).ajaxComplete(function() {
   })
 });
 
-//Tweet article action buttons
+//Tweet article action buttons changing color when hover
 $(document).ajaxComplete(function() {
   $('.fa-flag').mouseenter(function() {
     $(this).css('color', '#E6AF2E');
@@ -43,4 +43,3 @@ $(document).ajaxComplete(function() {
     $(this).css('color', '');
   })
 });
-

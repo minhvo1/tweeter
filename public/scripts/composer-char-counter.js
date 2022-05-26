@@ -1,5 +1,4 @@
-//Script to calculate remaining characters in tweet composer counter
-
+//Calculate and display remaining characters in tweet composer counter
 $(document).ready(function() {
   $('#tweet-text').on('input', function() {
     $(this).parent().find('.counter').text(140 - $(this).val().length);

@@ -58,6 +58,10 @@ body {
   cursor: pointer;
  }
 
+/*
+ * Responsive view for larger view screens (>1024px)
+ */
+
  @media (min-width: 1024px) {
   .header-and-container {
     display: flex;

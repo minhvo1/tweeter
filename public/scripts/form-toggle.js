@@ -1,4 +1,4 @@
-// Function for composer form toggle
+// Composer form toggle
 $(document).ready(function() {
   // Toggle composer form
   $('.action').on('click', function() {
@@ -19,6 +19,7 @@ $(document).ready(function() {
 
 // Function for scroll up toggle
 $(document).ready(function() {
+  // Hide and show button after scrolling past 100px
   $('#button-scroll-up').hide();
   $(window).scroll(function() {
     if($(document).scrollTop() > 100) {
@@ -27,6 +28,8 @@ $(document).ready(function() {
       $('#button-scroll-up').fadeOut('fast');
     }
   })
+
+  // Button changes color when hover
   $('#button-scroll-up').on('mouseover', function() {
     $(this).css('color', '#ba5e0d');
     $(this).css('border', '0.23rem solid #ba5e0d');
@@ -37,6 +40,7 @@ $(document).ready(function() {
     $(this).css('border', '0.23rem solid #000000');
   })
 
+  //Goes back to the top of page when clicked
   $('#button-scroll-up').on('click', function(event) {
     event.preventDefault();
     $('html, body').animate({scrollTop:0},300)

@@ -1,3 +1,7 @@
+/*
+ * Individual tweet articles element styles
+ */
+
 .article-tweet {
   display: flex;
   flex-direction: column;

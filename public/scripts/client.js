@@ -63,6 +63,7 @@ $(document).ready(function() {
     } else if (tweetData.slice(5).length > 140) {
       $('#tweet-length-error').css({'display':'block'}); // Displays error message if tweet is too long
     } else {
+      // Send POST request to /tweets
       $.ajax({
         type: 'POST',
         url: '/tweets',
