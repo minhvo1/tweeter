@@ -42,6 +42,8 @@
   position: absolute;
   left: 120px;
   margin: 0;
+  font-weight: 600;
+  font-size: 1.35rem;
   color: red;
   display: none;
 }
@@ -51,7 +53,7 @@
   left: 120px;
   margin: 0;
   font-weight: 600;
-  font-size: smaller;
+  font-size: 1.35rem;
   color: red;
   display: none;
 }

@@ -2,6 +2,7 @@
   height: 400px;
   background-image: url("/images/header-background.png");
   margin-top: 120px;
+  border-bottom: 0.2rem solid #000000;
 }
 
 .avatar {
@@ -16,16 +17,15 @@
 }
 
 .name {
-  margin-top: 0;
+  margin-top: 0.8rem;
   display: flex;
   justify-content: center;
 }
 
 .name>p {
   margin: 0.8rem;
-  font-size: 2.5rem;
-  letter-spacing: 0.05rem;
-  color:#e9bb51
+  font-size: 2.3rem;
+  font-weight: 500;
 }
 
 .username {
@@ -36,8 +36,5 @@
 
 .username>p {
   margin: 0;
-  font-size: 1.6rem;
-  letter-spacing: 0.15rem;
-  font-weight: 400;
-  color: #e9bb51
+  font-size: 1.3rem;
 }

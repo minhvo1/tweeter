@@ -51,10 +51,12 @@ body {
   .container {
     margin-top: 5rem;
   }
-  
+
   .banner-header {
     width: 40rem;
     margin-left: 5rem;
-    border: 0.3rem solid #353530;
+    z-index: 1;
+    border: 0.2rem solid #353530;
+    box-shadow: 6px 6px #696964;
   }
 }
